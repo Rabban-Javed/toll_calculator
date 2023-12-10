@@ -1,7 +1,9 @@
 {
+  "homepage": "https://github.com/Rabban-Javed/toll_calculator.git",
   "name": "toll-calculator",
+  "main": "./src/index.js",
   "version": "0.1.0",
-  "private": true,
+   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,6 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
